@@ -2,9 +2,7 @@ import _ from "lodash";
 import React from "react";
 import PropTypes from "prop-types";
 
-const Pagination = (props) => {
-  const { itemsCount, pageSize, currentPage, onPageChange } = props;
-
+const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pagesCount = Math.ceil(itemsCount / pageSize);
   //ceils function is used here to round up the decmal precision
 
